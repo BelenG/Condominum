@@ -17,6 +17,10 @@
 		C0A0F797234FB54A002FDB45 /* CondominumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0F796234FB54A002FDB45 /* CondominumTests.swift */; };
 		C0A0F7A2234FB54A002FDB45 /* CondominumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0F7A1234FB54A002FDB45 /* CondominumUITests.swift */; };
 		C70F55FFFE8366C68ABF15CE /* Pods_Condominum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D139DAF89D26A222D30910 /* Pods_Condominum.framework */; };
+		E62D9BE02352475000C0820D /* ApiConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D9BDF2352475000C0820D /* ApiConstant.swift */; };
+		E62D9BE223524CE300C0820D /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D9BE123524CE300C0820D /* ApiService.swift */; };
+		E62D9BE623524D3700C0820D /* ResponseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D9BE523524D3700C0820D /* ResponseLogin.swift */; };
+		E62D9BE823524E9A00C0820D /* RequestLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62D9BE723524E9A00C0820D /* RequestLogin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		C0A0F79D234FB54A002FDB45 /* CondominumUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CondominumUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A0F7A1234FB54A002FDB45 /* CondominumUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondominumUITests.swift; sourceTree = "<group>"; };
 		C0A0F7A3234FB54A002FDB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E62D9BDF2352475000C0820D /* ApiConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConstant.swift; sourceTree = "<group>"; };
+		E62D9BE123524CE300C0820D /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		E62D9BE523524D3700C0820D /* ResponseLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseLogin.swift; sourceTree = "<group>"; };
+		E62D9BE723524E9A00C0820D /* RequestLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestLogin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,8 @@
 		C0A0F780234FB548002FDB45 /* Condominum */ = {
 			isa = PBXGroup;
 			children = (
+				E62D9BDE2352473600C0820D /* Constants */,
+				E62D9BDD2352471300C0820D /* Http */,
 				C0A0F781234FB548002FDB45 /* AppDelegate.swift */,
 				C0A0F783234FB548002FDB45 /* ViewController.swift */,
 				C0A0F785234FB548002FDB45 /* Main.storyboard */,
@@ -153,6 +163,40 @@
 				C0A0F7A3234FB54A002FDB45 /* Info.plist */,
 			);
 			path = CondominumUITests;
+			sourceTree = "<group>";
+		};
+		E62D9BDD2352471300C0820D /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				E62D9BE423524D2400C0820D /* response */,
+				E62D9BE323524D1E00C0820D /* request */,
+				E62D9BE123524CE300C0820D /* ApiService.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		E62D9BDE2352473600C0820D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				E62D9BDF2352475000C0820D /* ApiConstant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E62D9BE323524D1E00C0820D /* request */ = {
+			isa = PBXGroup;
+			children = (
+				E62D9BE723524E9A00C0820D /* RequestLogin.swift */,
+			);
+			path = request;
+			sourceTree = "<group>";
+		};
+		E62D9BE423524D2400C0820D /* response */ = {
+			isa = PBXGroup;
+			children = (
+				E62D9BE523524D3700C0820D /* ResponseLogin.swift */,
+			);
+			path = response;
 			sourceTree = "<group>";
 		};
 		E6C419C2421E203BB800A9BD /* Frameworks */ = {
@@ -404,8 +448,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E62D9BE02352475000C0820D /* ApiConstant.swift in Sources */,
 				C0A0F784234FB548002FDB45 /* ViewController.swift in Sources */,
+				E62D9BE223524CE300C0820D /* ApiService.swift in Sources */,
+				E62D9BE823524E9A00C0820D /* RequestLogin.swift in Sources */,
 				C0A0F782234FB548002FDB45 /* AppDelegate.swift in Sources */,
+				E62D9BE623524D3700C0820D /* ResponseLogin.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
