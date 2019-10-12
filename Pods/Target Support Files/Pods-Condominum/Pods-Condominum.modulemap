@@ -1,0 +1,6 @@
+framework module Pods_Condominum {
+  umbrella header "Pods-Condominum-umbrella.h"
+
+  export *
+  module * { export * }
+}
