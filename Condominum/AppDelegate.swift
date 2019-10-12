@@ -16,12 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let login = RequestLogin(Username : "aaron carmona" , Password: "carmona11")
-        ApiService.login(request: login, completion: {
-            data in
-                debugPrint("hola mi nombre es " + data.lastName)
-        })
-        
         return true
     }
 

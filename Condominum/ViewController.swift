@@ -36,6 +36,20 @@ class ViewController: UIViewController {
         logo.clipsToBounds = true
         
     }
+    @IBAction func btnSessionClick(_ sender: Any) {
+        let user = userTextField.text!
+        let pass = passwordTextField.text!
+        
+        let login = RequestLogin(Username : user , Password: pass)
+        
+        ApiService.login(request: login, completion : { data in
+            let alert = UIAlertController(title: "Inicio de sesion", message: "bienvendio " + data.firstName + " " + data.lastName, preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Entiendo", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        })
+        
+    }
+    
 
 
 }
