@@ -12,12 +12,16 @@ class ViewController: UIViewController {
  
     
     @IBOutlet weak var header: UIImageView!
+    
     @IBOutlet weak var logo: UIImageView!
+    
     @IBOutlet weak var loginDataView: UIView!
     @IBOutlet weak var LoginDataLineView: UIView!
+    
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var initSessionButton: UIButton!
+    
     @IBOutlet weak var forgottenPasswordButton: UIButton!
     
     private let primaryColor = UIColor(red: 56/255, green: 117/255, blue: 233/255, alpha: 1)
@@ -46,13 +50,26 @@ class ViewController: UIViewController {
     @IBAction func btnSessionClick(_ sender: Any) {
         let user = userTextField.text!
         let pass = passwordTextField.text!
-        let login = RequestLogin(Username : user , Password: pass)
+        
+        let login = RequestLogin(user: user, pass: pass)
+        
+        print("asdf")
         
         ApiService.login(request: login, completion : { data in
-            let alert = UIAlertController(title: "Inicio de sesion", message: "bienvendio " + data.firstName + " " + data.lastName, preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Entiendo", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            self.showAlert(title : "1" , message : "2")
+        } , complationError : { code in
+            self.showAlert( title: "hay un error en " , message : "")
         })
+        
     }
+    
+    
+    func showAlert( title : String , message : String ) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Entiendo", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+
+
 }
 

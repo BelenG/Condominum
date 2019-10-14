@@ -13,16 +13,17 @@ import Alamofire
 
 class ApiService {
     
-    static func login( request : RequestLogin , completion : @escaping (LoginData) -> Void ) {
+    static func login( request : RequestLogin , completion : @escaping (LoginData) -> Void , complationError : @escaping (Int) -> Void ) {
         let jsonDecoder = JSONDecoder()
         _ = JSONEncoder()
-        AF.request(ApiContant.LOGIN_APP, method: .post , parameters: request , encoder: JSONParameterEncoder.default )
+        AF.request(ApiContant.LOGIN_APP, method: .post , parameters: request)
             .responseJSON { response in
                 do {
                     let data = try jsonDecoder.decode(ResponseLogin.self, from: response.data! )
-                    completion(data.login)
+                    print(data)
+                    completion(data.login[0])
                 } catch {
-                    
+                    complationError(10)
                 }
         }
     }
