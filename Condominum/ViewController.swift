@@ -12,16 +12,12 @@ class ViewController: UIViewController {
  
     
     @IBOutlet weak var header: UIImageView!
-    
     @IBOutlet weak var logo: UIImageView!
-    
     @IBOutlet weak var loginDataView: UIView!
     @IBOutlet weak var LoginDataLineView: UIView!
-    
     @IBOutlet weak var userTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var initSessionButton: UIButton!
-    
     @IBOutlet weak var forgottenPasswordButton: UIButton!
     
     private let primaryColor = UIColor(red: 56/255, green: 117/255, blue: 233/255, alpha: 1)
@@ -35,11 +31,21 @@ class ViewController: UIViewController {
         logo.layer.cornerRadius = logo.bounds.height / 2
         logo.clipsToBounds = true
         
+        loginDataView.layer.borderColor = tertiaryColor.cgColor
+        loginDataView.layer.borderWidth = 1
+        loginDataView.layer.cornerRadius = 3
+        loginDataView.clipsToBounds = true
+        
+        initSessionButton.backgroundColor = primaryColor
+        initSessionButton.setTitleColor(secondaryColor, for: .normal)
+        initSessionButton.layer.cornerRadius = 3
+        initSessionButton.clipsToBounds = true
+        
+        forgottenPasswordButton.setTitleColor(primaryColor, for: .normal)
     }
     @IBAction func btnSessionClick(_ sender: Any) {
         let user = userTextField.text!
         let pass = passwordTextField.text!
-        
         let login = RequestLogin(Username : user , Password: pass)
         
         ApiService.login(request: login, completion : { data in
@@ -47,10 +53,6 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Entiendo", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
         })
-        
     }
-    
-
-
 }
 
