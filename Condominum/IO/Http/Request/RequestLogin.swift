@@ -9,7 +9,7 @@
 import Foundation
 
 struct RequestLogin : Encodable {
-    let Username : String
-    let Password : String
+    var user : String
+    var pass : String
 }
 

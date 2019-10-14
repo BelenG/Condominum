@@ -16,8 +16,7 @@ class ApiContant {
     
     //static let KEEP_ACTIVE_SESSION = URL_BASE + "/KeepActiveSession"
     //static let LOGIN = URL_BASE + "/Login"
-    //static let LOGIN_APP = URL_BASE + "/LoginAPP"
-    static let LOGIN_APP = "https://recognition.ever-track.com/api/Login"
+    static let LOGIN_APP = URL_BASE + "/LoginAPP"
     //static let LOGOUT = URL_BASE + "/Logout"
     //static let SETTINGS = URL_BASE + "/Settings"
     //static let VALIDATE_LOGIN = URL_BASE + "/ValidateLogin"

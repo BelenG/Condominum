@@ -40,16 +40,24 @@ class ViewController: UIViewController {
         let user = userTextField.text!
         let pass = passwordTextField.text!
         
-        let login = RequestLogin(Username : user , Password: pass)
+        let login = RequestLogin(user: user, pass: pass)
+        
+        print("asdf")
         
         ApiService.login(request: login, completion : { data in
-            let alert = UIAlertController(title: "Inicio de sesion", message: "bienvendio " + data.firstName + " " + data.lastName, preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Entiendo", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            self.showAlert(title : "1" , message : "2")
+        } , complationError : { code in
+            self.showAlert( title: "hay un error en " , message : "")
         })
         
     }
     
+    
+    func showAlert( title : String , message : String ) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Entiendo", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
 
 
 }
