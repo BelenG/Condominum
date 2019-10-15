@@ -135,13 +135,11 @@
 		C0A0F780234FB548002FDB45 /* Condominum */ = {
 			isa = PBXGroup;
 			children = (
+				E64129F12354345800BAD336 /* IO */,
+				E64129EE235433D800BAD336 /* Assets */,
+				E64129EC235433AB00BAD336 /* Delegate */,
+				E64129EB235433A000BAD336 /* Controller */,
 				E62D9BDE2352473600C0820D /* Constants */,
-				E62D9BDD2352471300C0820D /* Http */,
-				C0A0F781234FB548002FDB45 /* AppDelegate.swift */,
-				C0A0F783234FB548002FDB45 /* ViewController.swift */,
-				C0A0F785234FB548002FDB45 /* Main.storyboard */,
-				C0A0F788234FB54A002FDB45 /* Assets.xcassets */,
-				C0A0F78A234FB54A002FDB45 /* LaunchScreen.storyboard */,
 				C0A0F78D234FB54A002FDB45 /* Info.plist */,
 			);
 			path = Condominum;
@@ -168,8 +166,8 @@
 		E62D9BDD2352471300C0820D /* Http */ = {
 			isa = PBXGroup;
 			children = (
-				E62D9BE423524D2400C0820D /* response */,
-				E62D9BE323524D1E00C0820D /* request */,
+				E62D9BE423524D2400C0820D /* Response */,
+				E62D9BE323524D1E00C0820D /* Request */,
 				E62D9BE123524CE300C0820D /* ApiService.swift */,
 			);
 			path = Http;
@@ -183,20 +181,78 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		E62D9BE323524D1E00C0820D /* request */ = {
+		E62D9BE323524D1E00C0820D /* Request */ = {
 			isa = PBXGroup;
 			children = (
 				E62D9BE723524E9A00C0820D /* RequestLogin.swift */,
 			);
-			path = request;
+			path = Request;
 			sourceTree = "<group>";
 		};
-		E62D9BE423524D2400C0820D /* response */ = {
+		E62D9BE423524D2400C0820D /* Response */ = {
 			isa = PBXGroup;
 			children = (
 				E62D9BE523524D3700C0820D /* ResponseLogin.swift */,
 			);
-			path = response;
+			path = Response;
+			sourceTree = "<group>";
+		};
+		E64129EB235433A000BAD336 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E64129F0235433F100BAD336 /* Login */,
+				E64129EF235433EB00BAD336 /* Splash */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E64129EC235433AB00BAD336 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				E64129ED235433B000BAD336 /* Root */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		E64129ED235433B000BAD336 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				C0A0F781234FB548002FDB45 /* AppDelegate.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		E64129EE235433D800BAD336 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C0A0F788234FB54A002FDB45 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E64129EF235433EB00BAD336 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C0A0F78A234FB54A002FDB45 /* LaunchScreen.storyboard */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		E64129F0235433F100BAD336 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				C0A0F785234FB548002FDB45 /* Main.storyboard */,
+				C0A0F783234FB548002FDB45 /* ViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E64129F12354345800BAD336 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				E62D9BDD2352471300C0820D /* Http */,
+			);
+			path = IO;
 			sourceTree = "<group>";
 		};
 		E6C419C2421E203BB800A9BD /* Frameworks */ = {

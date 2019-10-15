@@ -18,17 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fondo3" translatesAutoresizingMaskIntoConstraints="NO" id="OAc-2y-f6u">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fondo2" translatesAutoresizingMaskIntoConstraints="NO" id="OAc-2y-f6u">
                                 <rect key="frame" x="0.0" y="44" width="414" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="KoR-vm-vqx"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Face" translatesAutoresizingMaskIntoConstraints="NO" id="dHk-pO-e9w">
-                                <rect key="frame" x="169.5" y="134.5" width="75" height="75"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="dHk-pO-e9w">
+                                <rect key="frame" x="107" y="72" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="FxZ-Ar-LTS"/>
-                                    <constraint firstAttribute="width" constant="75" id="hBz-dm-6oR"/>
+                                    <constraint firstAttribute="height" constant="200" id="FxZ-Ar-LTS"/>
+                                    <constraint firstAttribute="width" constant="200" id="hBz-dm-6oR"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LoB-Gq-KsB">
@@ -41,12 +41,12 @@
                                             <constraint firstAttribute="height" constant="1" id="TIn-FS-SlU"/>
                                         </constraints>
                                     </view>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0gE-K5-aAP">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Monica.olvera" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0gE-K5-aAP">
                                         <rect key="frame" x="16" y="8" width="350" height="30.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tm9-xu-vKY">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tm9-xu-vKY">
                                         <rect key="frame" x="16" y="55.5" width="350" height="30.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -146,7 +146,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Face" width="196" height="196"/>
-        <image name="Fondo3" width="1125" height="692"/>
+        <image name="Fondo2" width="7111" height="4000"/>
+        <image name="Icon" width="1000" height="1000"/>
     </resources>
 </document>
