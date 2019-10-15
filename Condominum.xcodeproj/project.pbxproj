@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		561843D1F3C8EC5987E73304 /* Pods_CondominumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B9E38780671C256942E8A5 /* Pods_CondominumTests.framework */; };
 		9176B771FD5F713C6EB81155 /* Pods_Condominum_CondominumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B76635AFF9029C1C903A7D1 /* Pods_Condominum_CondominumUITests.framework */; };
+		C0750C7823562A40008339B7 /* LaunchScreem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0750C7723562A40008339B7 /* LaunchScreem.storyboard */; };
 		C0A0F782234FB548002FDB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0F781234FB548002FDB45 /* AppDelegate.swift */; };
 		C0A0F784234FB548002FDB45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0F783234FB548002FDB45 /* ViewController.swift */; };
 		C0A0F787234FB548002FDB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A0F785234FB548002FDB45 /* Main.storyboard */; };
 		C0A0F789234FB54A002FDB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0A0F788234FB54A002FDB45 /* Assets.xcassets */; };
-		C0A0F78C234FB54A002FDB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0A0F78A234FB54A002FDB45 /* LaunchScreen.storyboard */; };
 		C0A0F797234FB54A002FDB45 /* CondominumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0F796234FB54A002FDB45 /* CondominumTests.swift */; };
 		C0A0F7A2234FB54A002FDB45 /* CondominumUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A0F7A1234FB54A002FDB45 /* CondominumUITests.swift */; };
 		C70F55FFFE8366C68ABF15CE /* Pods_Condominum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06D139DAF89D26A222D30910 /* Pods_Condominum.framework */; };
@@ -50,12 +50,12 @@
 		71B9E38780671C256942E8A5 /* Pods_CondominumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CondominumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AABB04C24B26ACAFE3410E /* Pods-CondominumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondominumTests.release.xcconfig"; path = "Target Support Files/Pods-CondominumTests/Pods-CondominumTests.release.xcconfig"; sourceTree = "<group>"; };
 		C008FBD8DD82B6F112112030 /* Pods-CondominumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondominumTests.debug.xcconfig"; path = "Target Support Files/Pods-CondominumTests/Pods-CondominumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C0750C7723562A40008339B7 /* LaunchScreem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreem.storyboard; path = Controller/Splash/LaunchScreem.storyboard; sourceTree = "<group>"; };
 		C0A0F77E234FB548002FDB45 /* Condominum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Condominum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A0F781234FB548002FDB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0A0F783234FB548002FDB45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C0A0F786234FB548002FDB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0A0F788234FB54A002FDB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C0A0F78B234FB54A002FDB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0A0F78D234FB54A002FDB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C0A0F792234FB54A002FDB45 /* CondominumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CondominumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A0F796234FB54A002FDB45 /* CondominumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondominumTests.swift; sourceTree = "<group>"; };
@@ -141,6 +141,7 @@
 				E64129EB235433A000BAD336 /* Controller */,
 				E62D9BDE2352473600C0820D /* Constants */,
 				C0A0F78D234FB54A002FDB45 /* Info.plist */,
+				C0750C7723562A40008339B7 /* LaunchScreem.storyboard */,
 			);
 			path = Condominum;
 			sourceTree = "<group>";
@@ -233,7 +234,6 @@
 		E64129EF235433EB00BAD336 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				C0A0F78A234FB54A002FDB45 /* LaunchScreen.storyboard */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -374,8 +374,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0A0F78C234FB54A002FDB45 /* LaunchScreen.storyboard in Resources */,
 				C0A0F789234FB54A002FDB45 /* Assets.xcassets in Resources */,
+				C0750C7823562A40008339B7 /* LaunchScreem.storyboard in Resources */,
 				C0A0F787234FB548002FDB45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,14 +551,6 @@
 				C0A0F786234FB548002FDB45 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C0A0F78A234FB54A002FDB45 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C0A0F78B234FB54A002FDB45 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

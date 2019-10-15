@@ -29,11 +29,17 @@ class ViewController: UIViewController {
     private let tertiaryColor = UIColor(red: 254/255, green: 254/255, blue: 254/255, alpha: 1)
     
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         //logo.layer.cornerRadius = logo.bounds.height / 2
         //logo.clipsToBounds = true
+       // DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3){
+        //    self.performSegue(withIdentifier: "showLaunch", sender: nil)
+        //}
+        
         
         loginDataView.layer.borderColor = tertiaryColor.cgColor
         loginDataView.layer.borderWidth = 1

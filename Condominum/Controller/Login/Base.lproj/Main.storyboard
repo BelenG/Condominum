@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fondo2" translatesAutoresizingMaskIntoConstraints="NO" id="OAc-2y-f6u">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FondoLogin" translatesAutoresizingMaskIntoConstraints="NO" id="OAc-2y-f6u">
                                 <rect key="frame" x="0.0" y="44" width="414" height="256"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="256" id="KoR-vm-vqx"/>
@@ -146,7 +146,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Fondo2" width="7111" height="4000"/>
+        <image name="FondoLogin" width="7111" height="4000"/>
         <image name="Icon" width="1000" height="1000"/>
     </resources>
 </document>
