@@ -9,14 +9,16 @@
 import Foundation
 
 class ApiContant {
-    private static let URL_BASE_TESTING = "https://testing.ever-track.com/WS_Login.asmx"
+    private static let URL_BASE_TESTING = "https://testing.ever-track.com"
     private static let URL_BASE_PROD = "http://cm.colonosvallescondido.com.mx/WS_Login.asmx";
     
     private static let URL_BASE = URL_BASE_TESTING
     
     //static let KEEP_ACTIVE_SESSION = URL_BASE + "/KeepActiveSession"
     //static let LOGIN = URL_BASE + "/Login"
-    static let LOGIN_APP = URL_BASE + "/LoginAPP"
+    static let LOGIN_APP = URL_BASE + "/WS_Login.asmx/LoginAPP"
+    static let GET_VISIT_BY_USER_ID_APP = URL_BASE + "/ws_visit.asmx/getVisitByUserIdAPP"
+    
     //static let LOGOUT = URL_BASE + "/Logout"
     //static let SETTINGS = URL_BASE + "/Settings"
     //static let VALIDATE_LOGIN = URL_BASE + "/ValidateLogin"

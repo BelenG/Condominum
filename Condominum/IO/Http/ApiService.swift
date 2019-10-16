@@ -15,7 +15,6 @@ class ApiService {
     
     static func login( request : RequestLogin , completion : @escaping (LoginData) -> Void , complationError : @escaping (Int) -> Void ) {
         let jsonDecoder = JSONDecoder()
-        _ = JSONEncoder()
         AF.request(ApiContant.LOGIN_APP, method: .post , parameters: request)
             .responseJSON { response in
                 do {
@@ -25,6 +24,21 @@ class ApiService {
                 } catch {
                     complationError(10)
                 }
+        }
+    }
+    
+    static func getVisitByUserIdApp( request : RequestGetVisitByUserIdApp , completion : @escaping (DataGetVisitByUserIdApp) -> Void , completionError : @escaping (Any) -> Void ) {
+        let jsonDecoder = JSONDecoder()
+        
+        AF.request(ApiContant.GET_VISIT_BY_USER_ID_APP , method: .post , parameters: request)
+            .responseJSON { response in
+                do {
+                    let data = try jsonDecoder.decode(ReponseGetVisitByUserIdApp.self, from: response.data! )
+                    completion(data.ListVisit[0])
+                } catch {
+                    completionError(10)
+                }
+                //completion(response.result)
         }
     }
 }

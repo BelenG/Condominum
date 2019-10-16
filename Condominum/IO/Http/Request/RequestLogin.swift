@@ -8,7 +8,9 @@
 
 import Foundation
 
-struct RequestLogin : Encodable {
+//codable - solo pueden ser structs ??'
+
+struct RequestLogin : Codable {
     var user : String
     var pass : String
 }
