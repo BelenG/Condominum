@@ -18,6 +18,7 @@ class ApiContant {
     //static let LOGIN = URL_BASE + "/Login"
     static let LOGIN_APP = URL_BASE + "/WS_Login.asmx/LoginAPP"
     static let GET_VISIT_BY_USER_ID_APP = URL_BASE + "/ws_visit.asmx/getVisitByUserIdAPP"
+    static let INSERT_VISIT_APP = URL_BASE + "/ws_visit.asmx/insertVisitAPP"
     
     //static let LOGOUT = URL_BASE + "/Logout"
     //static let SETTINGS = URL_BASE + "/Settings"

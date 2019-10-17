@@ -27,9 +27,11 @@ class ApiService {
         }
     }
     
-    static func getVisitByUserIdApp( request : RequestGetVisitByUserIdApp , completion : @escaping (DataGetVisitByUserIdApp) -> Void , completionError : @escaping (Any) -> Void ) {
-        let jsonDecoder = JSONDecoder()
+    static func getVisitByUserIdApp( request : RequestGetVisitByUserIdApp ,
+                 completion : @escaping (DataGetVisitByUserIdApp) -> Void , completionError : @escaping (Any) -> Void ) {
         
+        let jsonDecoder = JSONDecoder()
+
         AF.request(ApiContant.GET_VISIT_BY_USER_ID_APP , method: .post , parameters: request)
             .responseJSON { response in
                 do {
@@ -37,8 +39,15 @@ class ApiService {
                     completion(data.ListVisit[0])
                 } catch {
                     completionError(10)
-                }
-                //completion(response.result)
+        }
+            //completion(response.result)
         }
     }
+    
+    static func insertVisit( request : Any , completion : @escaping (Any) -> Void ) {
+            
+    }
+
 }
+    
+    
