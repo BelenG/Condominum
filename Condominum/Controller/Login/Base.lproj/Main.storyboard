@@ -77,6 +77,7 @@
                                 <state key="normal" title="Iniciar sesión"/>
                                 <connections>
                                     <action selector="btnSessionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xi9-ZM-daP"/>
+                                    <segue destination="MMr-tD-x01" kind="show" id="0CQ-6N-tVC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQN-is-Pjw">
@@ -142,7 +143,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="109.82142857142857"/>
+            <point key="canvasLocation" x="123" y="-102"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="khn-3Y-IkE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Menu" id="MMr-tD-x01" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EVz-7W-jyn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="61"/>
         </scene>
     </scenes>
     <resources>
