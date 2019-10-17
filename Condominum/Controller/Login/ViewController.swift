@@ -60,31 +60,18 @@ class ViewController: UIViewController {
         let login = RequestLogin(user: user, pass: pass)
         
         ApiService.login(request: login, completion : { data in
-            self.showAlert(title : "1" , message : "2")
-            self.request2(userId: data.userId)
+            AppDelegate.user = data
+            self.open()
         } , complationError : { code in
-            self.showAlert( title: "hay un error en " , message : "")
-        })
-        
-    }
-    
-    
-    func request2 ( userId : Int ) {
-        ApiService.getVisitByUserIdApp(request: RequestGetVisitByUserIdApp(userId: userId), completion: {
-            data in
-                print(data)
-        } , completionError: {
-            error in
-                print(error);
+            debugPrint(code)
         })
     }
     
-    func showAlert( title : String , message : String ) {
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "Entiendo", style: UIAlertAction.Style.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+    func open(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "menu") as! MenuViewController
+        self.present(newViewController, animated: true, completion: nil)
     }
-
 
 }
 

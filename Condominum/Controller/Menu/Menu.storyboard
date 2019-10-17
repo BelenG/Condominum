@@ -145,7 +145,7 @@
         <!--Menu View Controller-->
         <scene sceneID="uLs-5C-bMR">
             <objects>
-                <viewController id="gth-xI-7oi" customClass="MenuViewController" customModule="Condominum" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="menu" id="gth-xI-7oi" customClass="MenuViewController" customModule="Condominum" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XHA-G6-eRk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -168,6 +168,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1yG-eW-Yzh"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="6dK-AH-0yE" id="dxT-EM-JGy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DHR-w9-GY7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

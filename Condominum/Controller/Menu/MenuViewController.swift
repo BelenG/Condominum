@@ -10,16 +10,17 @@ import UIKit
 
 class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var tableView: UITableView!
     
-    var teams: [String] = ["Atletico de Madrid", "Barcelona", "Deportivo de la Coruña", "Las Palmas", "Malaga", "Rayo Vallecano", "Sporting", "Real Sociedad", "Espanyol", "Mallorca", "Valladolid", "Eibar", "Ponferradina", "Albacete"]
+    var visit: [DataGetVisitByUserIdApp] = []
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) ->  Int {
-       return teams.count
+       return visit.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell=UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
-        cell.textLabel?.text  = teams[indexPath.row]
+        cell.textLabel?.text  = visit[indexPath.row].Name ?? ""
         
         return cell
     }
@@ -27,7 +28,12 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        ApiService.getVisitByUserIdApp(request: RequestGetVisitByUserIdApp(userId: AppDelegate.user?.userId ?? 0), completion: { data in
+            self.visit = data
+            self.tableView.reloadData()
+        }, completionError: { error in
+            debugPrint(error)
+        })
         // Do any additional setup after loading the view.
     }
     

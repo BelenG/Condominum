@@ -19,7 +19,6 @@ class ApiService {
             .responseJSON { response in
                 do {
                     let data = try jsonDecoder.decode(ResponseLogin.self, from: response.data! )
-                    print(data)
                     completion(data.login[0])
                 } catch {
                     complationError(10)
@@ -28,7 +27,7 @@ class ApiService {
     }
     
     static func getVisitByUserIdApp( request : RequestGetVisitByUserIdApp ,
-                 completion : @escaping (DataGetVisitByUserIdApp) -> Void , completionError : @escaping (Any) -> Void ) {
+                 completion : @escaping ([DataGetVisitByUserIdApp]) -> Void , completionError : @escaping (Any) -> Void ) {
         
         let jsonDecoder = JSONDecoder()
 
@@ -36,11 +35,10 @@ class ApiService {
             .responseJSON { response in
                 do {
                     let data = try jsonDecoder.decode(ReponseGetVisitByUserIdApp.self, from: response.data! )
-                    completion(data.ListVisit[0])
+                    completion(data.ListVisit)
                 } catch {
                     completionError(10)
         }
-            //completion(response.result)
         }
     }
     
