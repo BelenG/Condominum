@@ -59,16 +59,25 @@ class ViewController: UIViewController {
         
         let login = RequestLogin(user: user, pass: pass)
         
-        print("asdf")
-        
         ApiService.login(request: login, completion : { data in
             self.showAlert(title : "1" , message : "2")
+            self.request2(userId: data.userId)
         } , complationError : { code in
             self.showAlert( title: "hay un error en " , message : "")
         })
         
     }
     
+    
+    func request2 ( userId : Int ) {
+        ApiService.getVisitByUserIdApp(request: RequestGetVisitByUserIdApp(userId: userId), completion: {
+            data in
+                print(data)
+        } , completionError: {
+            error in
+                print(error);
+        })
+    }
     
     func showAlert( title : String , message : String ) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
