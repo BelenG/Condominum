@@ -12,31 +12,41 @@ class MenuViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     @IBOutlet weak var tableView: UITableView!
     
-    var visit: [DataGetVisitByUserIdApp] = []
+    let exercisesList = ["Control de Acceso", "Reporte de Incidencias", "Cuotas de Mantenimiento"]
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) ->  Int {
-       return visit.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return exercisesList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell=UITableViewCell(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: "mycell")
-        cell.textLabel?.text  = visit[indexPath.row].Name ?? ""
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! MenuTableViewCell
+        cell.labelCell.text = exercisesList[indexPath.row]
+        cell.imageCell.image = UIImage(named: exercisesList[indexPath.row])
         return cell
     }
-    
 
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("You tapped cell number \(indexPath.section).")
+        print("Cell cliked value is \(indexPath.row)")
+        
+        if(indexPath.row == 0)
+        {
+            open()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        ApiService.getVisitByUserIdApp(request: RequestGetVisitByUserIdApp(userId: AppDelegate.user?.userId ?? 0), completion: { data in
-            self.visit = data
-            self.tableView.reloadData()
-        }, completionError: { error in
-            debugPrint(error)
-        })
         // Do any additional setup after loading the view.
     }
     
+    func open(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Visit", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "visit") as! VisitViewController
+        self.present(newViewController, animated: true, completion: nil)
+    }
+
 
     /*
     // MARK: - Navigation

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W7i-RE-N0i">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Visit View Controller-->
+        <scene sceneID="Ef5-iS-ckX">
+            <objects>
+                <viewController storyboardIdentifier="visit" id="W7i-RE-N0i" customClass="VisitViewController" customModule="Condominum" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Np5-9F-LB8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zSx-ZQ-AW8">
+                                <rect key="frame" x="0.0" y="84" width="414" height="778"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="W7i-RE-N0i" id="FVg-wJ-VXf"/>
+                                    <outlet property="delegate" destination="W7i-RE-N0i" id="DQs-GS-PGT"/>
+                                </connections>
+                            </tableView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rtA-HK-mKL">
+                                <rect key="frame" x="0.0" y="40" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="U9e-2D-c1q"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zSx-ZQ-AW8" firstAttribute="leading" secondItem="4lh-mc-NUv" secondAttribute="leading" id="8Mx-6g-uM6"/>
+                            <constraint firstItem="zSx-ZQ-AW8" firstAttribute="bottom" secondItem="4lh-mc-NUv" secondAttribute="bottom" id="ElI-JT-8Mg"/>
+                            <constraint firstItem="zSx-ZQ-AW8" firstAttribute="top" secondItem="4lh-mc-NUv" secondAttribute="top" constant="40" id="RYs-Ka-1Pa"/>
+                            <constraint firstItem="zSx-ZQ-AW8" firstAttribute="trailing" secondItem="4lh-mc-NUv" secondAttribute="trailing" id="jq5-gl-3fn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4lh-mc-NUv"/>
+                    </view>
+                    <connections>
+                        <outlet property="TableView" destination="zSx-ZQ-AW8" id="Ij7-k9-1fd"/>
+                        <outlet property="tableView" destination="zSx-ZQ-AW8" id="ps5-4D-4uH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yx7-4J-3mH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="628.98550724637687" y="-461.38392857142856"/>
+        </scene>
+    </scenes>
+</document>
