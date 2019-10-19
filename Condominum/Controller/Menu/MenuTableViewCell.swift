@@ -9,10 +9,13 @@
 import UIKit
 
 class MenuTableViewCell: UITableViewCell {
+    
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var labelCell: UILabel!
     
     override func awakeFromNib() {
+        imageCell.layer.cornerRadius = 10
+        imageCell.clipsToBounds = true
         super.awakeFromNib()
         // Initialization code
     }

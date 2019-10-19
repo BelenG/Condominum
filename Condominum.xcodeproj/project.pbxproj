@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		561843D1F3C8EC5987E73304 /* Pods_CondominumTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71B9E38780671C256942E8A5 /* Pods_CondominumTests.framework */; };
 		9176B771FD5F713C6EB81155 /* Pods_Condominum_CondominumUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B76635AFF9029C1C903A7D1 /* Pods_Condominum_CondominumUITests.framework */; };
+		C02EA642235A334500A453B4 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EA641235A334500A453B4 /* MenuTableViewController.swift */; };
 		C0750C7823562A40008339B7 /* LaunchScreem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0750C7723562A40008339B7 /* LaunchScreem.storyboard */; };
 		C0750C7D2357D6F6008339B7 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0750C7C2357D6F6008339B7 /* Menu.storyboard */; };
-		C0750C7F23581AC1008339B7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0750C7E23581AC1008339B7 /* MenuViewController.swift */; };
 		C0750C8123593CCB008339B7 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0750C8023593CCB008339B7 /* MenuTableViewCell.swift */; };
 		C0750C8623593F7B008339B7 /* Visit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0750C8523593F7B008339B7 /* Visit.storyboard */; };
 		C0750C8823593FE8008339B7 /* VisitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0750C8723593FE8008339B7 /* VisitViewController.swift */; };
@@ -57,9 +57,9 @@
 		71B9E38780671C256942E8A5 /* Pods_CondominumTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CondominumTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AABB04C24B26ACAFE3410E /* Pods-CondominumTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondominumTests.release.xcconfig"; path = "Target Support Files/Pods-CondominumTests/Pods-CondominumTests.release.xcconfig"; sourceTree = "<group>"; };
 		C008FBD8DD82B6F112112030 /* Pods-CondominumTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CondominumTests.debug.xcconfig"; path = "Target Support Files/Pods-CondominumTests/Pods-CondominumTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C02EA641235A334500A453B4 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		C0750C7723562A40008339B7 /* LaunchScreem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreem.storyboard; sourceTree = "<group>"; };
 		C0750C7C2357D6F6008339B7 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
-		C0750C7E23581AC1008339B7 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		C0750C8023593CCB008339B7 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		C0750C8523593F7B008339B7 /* Visit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Visit.storyboard; sourceTree = "<group>"; };
 		C0750C8723593FE8008339B7 /* VisitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitViewController.swift; sourceTree = "<group>"; };
@@ -128,8 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				C0750C7C2357D6F6008339B7 /* Menu.storyboard */,
-				C0750C7E23581AC1008339B7 /* MenuViewController.swift */,
 				C0750C8023593CCB008339B7 /* MenuTableViewCell.swift */,
+				C02EA641235A334500A453B4 /* MenuTableViewController.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -235,9 +235,9 @@
 		E64129EB235433A000BAD336 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				E64129F0235433F100BAD336 /* Login */,
 				C0750C8223593EF2008339B7 /* Visit */,
 				C0750C7B23577CE1008339B7 /* Menu */,
-				E64129F0235433F100BAD336 /* Login */,
 				E64129EF235433EB00BAD336 /* Splash */,
 			);
 			path = Controller;
@@ -549,8 +549,8 @@
 				C0750C8823593FE8008339B7 /* VisitViewController.swift in Sources */,
 				E62D9BE223524CE300C0820D /* ApiService.swift in Sources */,
 				C0750C8123593CCB008339B7 /* MenuTableViewCell.swift in Sources */,
-				C0750C7F23581AC1008339B7 /* MenuViewController.swift in Sources */,
 				E62D9BE823524E9A00C0820D /* RequestLogin.swift in Sources */,
+				C02EA642235A334500A453B4 /* MenuTableViewController.swift in Sources */,
 				E696712123566060008701E8 /* RequestGetVisitByUserIdApp.swift in Sources */,
 				C0A0F782234FB548002FDB45 /* AppDelegate.swift in Sources */,
 				E62D9BE623524D3700C0820D /* ResponseLogin.swift in Sources */,

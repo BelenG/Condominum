@@ -29,6 +29,8 @@ class VisitViewController: UIViewController , UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         ApiService.getVisitByUserIdApp(request: RequestGetVisitByUserIdApp(userId: AppDelegate.user?.userId ?? 0), completion: { data in
             self.visit = data
             self.TableView.reloadData()

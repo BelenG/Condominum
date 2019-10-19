@@ -69,8 +69,9 @@ class ViewController: UIViewController {
     
     func open(){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Menu", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "menu") as! MenuViewController
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "NavegationController") as! UINavigationController
         self.present(newViewController, animated: true, completion: nil)
+        
     }
 
 }
