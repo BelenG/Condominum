@@ -37,25 +37,7 @@ class MenuTableViewController: UITableViewController {
     }
     
     
-   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       print("You tapped cell number \(indexPath.section).")
-       print("Cell cliked value is \(indexPath.row)")
-        
-        if(indexPath.row == 0)
-        {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Visit", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "visit") as! VisitViewController
-            
-            
-            navigationController?.pushViewController(newViewController, animated: true)
-        }
-    }
-    
-    func open(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Visit", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "visit") as! VisitViewController
-        self.present(newViewController, animated: true, completion: nil)
-    }
+ 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
