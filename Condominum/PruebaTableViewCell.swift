@@ -1,25 +1,21 @@
 //
-//  MenuTableViewCell.swift
+//  PruebaTableViewCell.swift
 //  Condominum
 //
-//  Created by leonsita on 10/17/19.
+//  Created by leonsita on 10/23/19.
 //  Copyright © 2019 leonsita. All rights reserved.
 //
 
 import UIKit
 
-class MenuTableViewCell: UITableViewCell {
+class PruebaTableViewCell: UITableViewCell {
+
     
-    @IBOutlet weak var imageCell: GradientAccess!
-    @IBOutlet weak var labelCell: UILabel!
-    
-    
+    @IBOutlet weak var nameUILabel: UILabel!
+    @IBOutlet weak var imageUIImageView: UIImageView!
     
     
     override func awakeFromNib() {
-        imageCell.layer.cornerRadius = 10
-        imageCell.clipsToBounds = true
-        
         super.awakeFromNib()
         // Initialization code
     }

@@ -13,6 +13,16 @@
 		C02EA648235C0C3C00A453B4 /* VisitList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C02EA647235C0C3C00A453B4 /* VisitList.storyboard */; };
 		C02EA64C235C0F5F00A453B4 /* VisitListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02EA64B235C0F5F00A453B4 /* VisitListTableViewCell.swift */; };
 		C04F5868235E95990037B148 /* VisitListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04F5867235E95990037B148 /* VisitListViewController.swift */; };
+		C04F586A2360B5920037B148 /* PruebaTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C04F58692360B5920037B148 /* PruebaTableView.storyboard */; };
+		C04F586C2360B6950037B148 /* PruebaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04F586B2360B6950037B148 /* PruebaTableViewController.swift */; };
+		C04F586E2360B7990037B148 /* PruebaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04F586D2360B7990037B148 /* PruebaTableViewCell.swift */; };
+		C04F5870236373D90037B148 /* ExtensionImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04F586F236373D90037B148 /* ExtensionImage.swift */; };
+		C04F587223637A510037B148 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04F587123637A510037B148 /* GradientView.swift */; };
+		C0569A8C2368B74400BF6B74 /* GradientAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0569A8B2368B74400BF6B74 /* GradientAccess.swift */; };
+		C0569A8E2369F44600BF6B74 /* Leading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0569A8D2369F44600BF6B74 /* Leading.storyboard */; };
+		C0569A902369FBDB00BF6B74 /* LeadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0569A8F2369FBDB00BF6B74 /* LeadingCollectionReusableView.swift */; };
+		C0569A922369FCB000BF6B74 /* LeadingCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0569A912369FCB000BF6B74 /* LeadingCollectionViewFlowLayout.swift */; };
+		C0569A942369FD3900BF6B74 /* LeadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0569A932369FD3900BF6B74 /* LeadingViewController.swift */; };
 		C0750C7823562A40008339B7 /* LaunchScreem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0750C7723562A40008339B7 /* LaunchScreem.storyboard */; };
 		C0750C7D2357D6F6008339B7 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0750C7C2357D6F6008339B7 /* Menu.storyboard */; };
 		C0750C8123593CCB008339B7 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0750C8023593CCB008339B7 /* MenuTableViewCell.swift */; };
@@ -62,6 +72,16 @@
 		C02EA647235C0C3C00A453B4 /* VisitList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VisitList.storyboard; sourceTree = "<group>"; };
 		C02EA64B235C0F5F00A453B4 /* VisitListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitListTableViewCell.swift; sourceTree = "<group>"; };
 		C04F5867235E95990037B148 /* VisitListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitListViewController.swift; sourceTree = "<group>"; };
+		C04F58692360B5920037B148 /* PruebaTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PruebaTableView.storyboard; sourceTree = "<group>"; };
+		C04F586B2360B6950037B148 /* PruebaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaTableViewController.swift; sourceTree = "<group>"; };
+		C04F586D2360B7990037B148 /* PruebaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PruebaTableViewCell.swift; sourceTree = "<group>"; };
+		C04F586F236373D90037B148 /* ExtensionImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionImage.swift; sourceTree = "<group>"; };
+		C04F587123637A510037B148 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C0569A8B2368B74400BF6B74 /* GradientAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientAccess.swift; sourceTree = "<group>"; };
+		C0569A8D2369F44600BF6B74 /* Leading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Leading.storyboard; sourceTree = "<group>"; };
+		C0569A8F2369FBDB00BF6B74 /* LeadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeadingCollectionReusableView.swift; path = Condominum/LeadingCollectionReusableView.swift; sourceTree = "<group>"; };
+		C0569A912369FCB000BF6B74 /* LeadingCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LeadingCollectionViewFlowLayout.swift; path = Condominum/LeadingCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		C0569A932369FD3900BF6B74 /* LeadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingViewController.swift; sourceTree = "<group>"; };
 		C0750C7723562A40008339B7 /* LaunchScreem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreem.storyboard; sourceTree = "<group>"; };
 		C0750C7C2357D6F6008339B7 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		C0750C8023593CCB008339B7 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -149,6 +169,10 @@
 		C0A0F775234FB548002FDB45 = {
 			isa = PBXGroup;
 			children = (
+				C0569A932369FD3900BF6B74 /* LeadingViewController.swift */,
+				C0569A8F2369FBDB00BF6B74 /* LeadingCollectionReusableView.swift */,
+				C0569A8D2369F44600BF6B74 /* Leading.storyboard */,
+				C0569A912369FCB000BF6B74 /* LeadingCollectionViewFlowLayout.swift */,
 				C0A0F780234FB548002FDB45 /* Condominum */,
 				C0A0F795234FB54A002FDB45 /* CondominumTests */,
 				C0A0F7A0234FB54A002FDB45 /* CondominumUITests */,
@@ -177,6 +201,12 @@
 				E64129EB235433A000BAD336 /* Controller */,
 				E62D9BDE2352473600C0820D /* Constants */,
 				C0A0F78D234FB54A002FDB45 /* Info.plist */,
+				C04F58692360B5920037B148 /* PruebaTableView.storyboard */,
+				C04F586B2360B6950037B148 /* PruebaTableViewController.swift */,
+				C04F586D2360B7990037B148 /* PruebaTableViewCell.swift */,
+				C04F587123637A510037B148 /* GradientView.swift */,
+				C04F586F236373D90037B148 /* ExtensionImage.swift */,
+				C0569A8B2368B74400BF6B74 /* GradientAccess.swift */,
 			);
 			path = Condominum;
 			sourceTree = "<group>";
@@ -415,10 +445,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0A0F789234FB54A002FDB45 /* Assets.xcassets in Resources */,
+				C0569A8E2369F44600BF6B74 /* Leading.storyboard in Resources */,
 				C0750C7823562A40008339B7 /* LaunchScreem.storyboard in Resources */,
 				C02EA648235C0C3C00A453B4 /* VisitList.storyboard in Resources */,
 				C0A0F787234FB548002FDB45 /* Main.storyboard in Resources */,
 				C0750C7D2357D6F6008339B7 /* Menu.storyboard in Resources */,
+				C04F586A2360B5920037B148 /* PruebaTableView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,12 +579,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C0C90B2357B31300B6ED64 /* ResponseGetVisitByUserIdApp.swift in Sources */,
+				C0569A942369FD3900BF6B74 /* LeadingViewController.swift in Sources */,
+				C0569A8C2368B74400BF6B74 /* GradientAccess.swift in Sources */,
 				E62D9BE02352475000C0820D /* ApiConstant.swift in Sources */,
 				C0A0F784234FB548002FDB45 /* ViewController.swift in Sources */,
 				C02EA64C235C0F5F00A453B4 /* VisitListTableViewCell.swift in Sources */,
 				C04F5868235E95990037B148 /* VisitListViewController.swift in Sources */,
+				C04F586C2360B6950037B148 /* PruebaTableViewController.swift in Sources */,
+				C04F587223637A510037B148 /* GradientView.swift in Sources */,
+				C0569A902369FBDB00BF6B74 /* LeadingCollectionReusableView.swift in Sources */,
 				E62D9BE223524CE300C0820D /* ApiService.swift in Sources */,
 				C0750C8123593CCB008339B7 /* MenuTableViewCell.swift in Sources */,
+				C04F5870236373D90037B148 /* ExtensionImage.swift in Sources */,
+				C0569A922369FCB000BF6B74 /* LeadingCollectionViewFlowLayout.swift in Sources */,
+				C04F586E2360B7990037B148 /* PruebaTableViewCell.swift in Sources */,
 				E62D9BE823524E9A00C0820D /* RequestLogin.swift in Sources */,
 				C02EA642235A334500A453B4 /* MenuTableViewController.swift in Sources */,
 				E696712123566060008701E8 /* RequestGetVisitByUserIdApp.swift in Sources */,

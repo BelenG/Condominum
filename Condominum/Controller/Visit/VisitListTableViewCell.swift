@@ -15,6 +15,7 @@ class VisitListTableViewCell: UITableViewCell {
     @IBOutlet weak var labelUILabel: UILabel!
     @IBOutlet weak var imageUIImage: UIImageView!
     @IBOutlet weak var dateUILabel: UILabel!
+    @IBOutlet weak var statusUILabel: UILabel!
     
     override func awakeFromNib() {
         imageUIImage.layer.cornerRadius = imageUIImage.bounds.height / 2

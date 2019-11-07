@@ -11,7 +11,11 @@ import UIKit
 class VisitListViewController: UITableViewController {
     
     let exercisesList = ["Control de Acceso", "Incidencias", "Servicios"]
-     var visit: [DataGetVisitByUserIdApp] = []
+    var visit: [DataGetVisitByUserIdApp] = []
+    @IBAction func addVisit(_ sender: Any) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +45,26 @@ class VisitListViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! VisitListTableViewCell
         cell.labelUILabel.text = visit[indexPath.row].Name ?? ""
         cell.dateUILabel.text = visit[indexPath.row].DateVisit ?? ""
-
+        cell.statusUILabel.text = visit[indexPath.row].Status ?? ""
+        
+        var name = visit[indexPath.row].Image ?? ""
+        name = ApiContant.URL_IMAGE + name
+        
+        print(name)
+        
+        let url = URL(string: name)
+        
+        DispatchQueue.global().async {
+            if let data = try? Data(contentsOf: url!), let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    cell.imageUIImage.image = image
+                }
+                
+            }
+        }
+        
+        
+        
         //cell.imageUIImage.image = UIImage(named: exercisesList[indexPath.row])
         return cell
     }
@@ -57,6 +80,12 @@ class VisitListViewController: UITableViewController {
         //   let newViewController = storyBoard.instantiateInitialViewController(withIdentifier: "visit")
         //    navigationController?.pushViewController(newViewController, animated: true)
         //}
+    }
+    
+    func loadImag(url: URL)
+    {
+        
+        
     }
     
     /*

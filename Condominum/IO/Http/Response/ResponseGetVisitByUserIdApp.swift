@@ -32,4 +32,6 @@ class DataGetVisitByUserIdApp : Codable {
     var Plate : String?
     var Color : String?
     var Year : Int?
+    var Image : String?
+    var Status : String?
 }
